@@ -82,6 +82,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("clipcatd")
 	hl.exec_cmd("hypridle")
 	hl.exec_cmd("wayle panel start")
+	hl.exec_cmd("spotify")
 end)
 
 -- ############################
@@ -340,7 +341,7 @@ hl.animation({
 
 -- name = no-gaps-wtv1
 
--- match:float = false
+-- match:float = fals
 
 -- match:workspace = w[tv1]
 

@@ -14,8 +14,10 @@ hl.config({
         dim_inactive = true,
         dim_strength = 0.3,
         inactive_opacity = 0.9,
+        rounding = 6,
     },
     dwindle = {
+        force_split = 2,
         preserve_split = true,
     },
     ecosystem = {
@@ -44,12 +46,13 @@ hl.config({
 
 -- Bezier curves
 hl.curve("easeInCubic", { type = "bezier", points = { {0.32, 0.0}, {0.67, 0.0} } })
+hl.curve("easeOutQuint", { type = "bezier", points = { {0.23, 1.0}, {0.32, 1.0} } })
 
 -- Animations
 hl.animation({
     leaf = "workspaces",
     enabled = true,
-    speed = 1.94,
+    speed = 2.0,
     bezier = "easeInCubic",
     style = "slide",
 })
@@ -57,7 +60,7 @@ hl.animation({
     leaf = "workspacesIn",
     enabled = true,
     speed = 1.21,
-    bezier = "easeInCubic",
+    bezier = "easeOutQuint",
     style = "slide",
 })
 hl.animation({
