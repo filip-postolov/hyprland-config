@@ -14,7 +14,7 @@ hl.config({
         dim_inactive = true,
         dim_strength = 0.3,
         inactive_opacity = 0.9,
-        rounding = 6,
+        rounding = 7,
     },
     dwindle = {
         force_split = 2,
